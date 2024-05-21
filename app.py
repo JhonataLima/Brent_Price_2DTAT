@@ -4,7 +4,7 @@ import numpy as np
 import datetime
 
 
-import yfinance as yf
+# import yfinance as yf
 from datetime import date
 
 import streamlit as st
