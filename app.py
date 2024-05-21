@@ -206,7 +206,6 @@ with tab2:
 
         # Dados Faltantes a base
         up_df = yf.download(indice, inicio, final)
-        up_df['Data'] = pd.to_datetime(df['Data'], format="%Y-%m-%d")
         
         # Verifique se os dados foram baixados corretamente
         if up_df.empty:
@@ -220,7 +219,8 @@ with tab2:
 
         # Atualizando a base
         df = pd.concat([df, up_df], ignore_index=True)
-
+        df['Data'] = pd.to_datetime(df['Data'], format="%Y-%m-%d")
+        
 
         if st.button('Prever'):
             #Prevendo os proximos dias
