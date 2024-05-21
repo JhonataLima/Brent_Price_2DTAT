@@ -12,6 +12,7 @@ from datetime import date
 
 import streamlit as st
 
+import joblib
 
 import warnings
 warnings.filterwarnings('ignore')
