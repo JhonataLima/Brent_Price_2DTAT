@@ -1,4 +1,3 @@
-pip install -r /mount/src/brent_price_2dtat/Requirements.txt
 #Importando bibliotecas necessárias
 import pandas as pd
 import numpy as np
