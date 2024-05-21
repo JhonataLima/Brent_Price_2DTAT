@@ -21,7 +21,7 @@ warnings.filterwarnings('ignore')
 
 
 # Carregar o modelo treinado
-with open('/mount/src/brent_price_2dtat/model.pkl', 'rb') as file:
+with open('model.pkl', 'rb') as file:
     model= joblib.load(file)
 
 # Carregando os dados
