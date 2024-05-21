@@ -4,5 +4,4 @@ yfinance
 plotly
 scikit-learn==1.4.2
 torch==2.3.0
-pickle
 joblib==1.4.2
