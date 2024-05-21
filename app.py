@@ -206,7 +206,8 @@ with tab2:
 
         # Dados Faltantes a base
         up_df = yf.download(indice, inicio, final)
-
+        up_df['Data'] = pd.to_datetime(df['Data'], format="%Y-%m-%d")
+        
         # Verifique se os dados foram baixados corretamente
         if up_df.empty:
             warnings.filterwarnings('ignore')
