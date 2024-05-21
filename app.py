@@ -21,7 +21,7 @@ warnings.filterwarnings('ignore')
 
 # Carregar o modelo treinado
 with open('model.pkl', 'rb') as file:
-    model= joblib    .load(file)
+    model= joblib.load(file)
 
 # Carregando os dados
 df = pd.read_csv('/mount/src/brent_price_2dtat/ipea.csv')
