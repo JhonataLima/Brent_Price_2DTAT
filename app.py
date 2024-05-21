@@ -203,7 +203,7 @@ with tab2:
     numero = st.number_input('Quantos dias deseja prever', min_value=1, max_value=3, value=1, step=1)
     if dia_util == True:
 
-        #Dados Faltantes a base
+        # Dados Faltantes a base
         up_df = yf.download(indice, inicio, final)
 
         # Verifique se os dados foram baixados corretamente
