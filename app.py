@@ -10,9 +10,7 @@ from datetime import date
 import streamlit as st
 import pickle
 
-import plotly.express as px
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
+
 
 import warnings
 warnings.filterwarnings('ignore')
