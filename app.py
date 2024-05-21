@@ -25,7 +25,7 @@ with open('model.pkl', 'rb') as file:
     model= pickle.load(file)
 
 # Carregando os dados
-df = pd.read_csv('data\ipea.csv')
+df = pd.read_csv('/mount/src/brent_price_2dtat/ipea.csv')
 
 
 #Atualizando os dados
@@ -250,4 +250,4 @@ with tab2:
 
 
 # exportando a base atualizada
-df.to_csv('data/ipea.csv', index=False)
+df.to_csv('/mount/src/brent_price_2dtat/ipea.csv', index=False)
